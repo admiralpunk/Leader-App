@@ -10,9 +10,9 @@ require("dotenv").config();
 const app = express();
 app.use(
   cors({
-    origin: "https://project-client.vercel.app", 
-    methods: ["GET,POST,PUT,DELETE"], 
-    credentials: true
+    origin: "leader-app-api.vercel.app",
+    methods: ["GET,POST,PUT,DELETE"],
+    credentials: true,
   })
 );
 app.use(express.json());
